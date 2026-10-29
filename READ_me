@@ -1,0 +1,105 @@
+Python Time Tracker
+
+Overview
+
+The Python Time Tracker is a command-line application designed to help users record and monitor the time they spend on different activities.
+
+Users can enter their name, specify an activity, start tracking their time, and stop the activity when they finish.
+
+The program calculates the time spent on each activity and provides a daily activity summary.
+
+Features
+
+Start tracking an activity.
+
+Record the user's name.
+
+Record the activity description.
+
+Automatically record the start time.
+
+Stop an activity and record the end time.
+
+Calculate the duration of an activity.
+
+Store activity sessions in a Python list.
+
+Display recorded activity sessions.
+
+View activity information through a menu.
+
+Exit the application.
+
+Technologies Used
+
+Python 3
+
+datetime module
+
+Lists
+
+Dictionaries
+
+Functions
+
+Loops
+
+Conditional statements
+
+User input
+
+Time calculations
+
+How the Program Works
+
+1. Start an Activity
+
+The user enters an activity and their name.
+
+The program records:
+
+The user's name.
+
+The activity description.
+
+The start time.
+
+The end time, initially set to None.
+
+The activity information is stored in a dictionary and added to the sessions list.
+
+2. Stop an Activity
+
+The user enters their name.
+
+The program searches the recorded sessions for an activity belonging to that user that has not yet been stopped.
+
+When a matching activity is found, the program records the end time and calculates the duration.
+
+3. Calculate Time Spent
+
+The program subtracts the start time from the end time.
+
+The difference is stored as a timedelta object representing the time spent on the activity.
+
+4. View Daily Activity
+
+The daily activity function examines the recorded sessions.
+
+It skips activities that have not been completed and calculates the time spent on completed activities.
+
+The program is intended to summarise the total time spent on each activity.
+
+5. Main Menu
+
+The application provides a menu with four options:
+
+Enter an activity and start tracking.
+
+Enter a name to stop an activity.
+
+View the activity summary.
+
+Quit the application.
+
+The menu uses a while loop to allow users to perform multiple actions until they choose to quit.
